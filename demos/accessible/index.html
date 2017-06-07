@@ -36,6 +36,10 @@
   <script src="../../accessible/workspace.component.js"></script>
   <script src="../../accessible/app.component.js"></script>
 
+  <script src="../../blocks/functions.js"></script>
+  <script src="../../tests/generators/generators/javascript/functions.js"></script>
+
+
   <link rel="stylesheet" href="../../accessible/media/accessible.css">
   <style>
     body {
@@ -78,15 +82,27 @@
   <blockly-app></blockly-app>
 
   <script>
-    var ACCESSIBLE_GLOBALS = {
-      // Prefix of path to sound files.
-      mediaPathPrefix: '../../accessible/media/',
-      // Additional buttons for the sidebar.
-      customSidebarButtons: []
-    };
+  var ACCESSIBLE_GLOBALS = {
+    // Prefix of path to sound files.
+    mediaPathPrefix: '../../accessible/media/',
+    // Additional buttons for the sidebar.
+    customSidebarButtons: [{
+      text: 'Run your program',
+      action: function(){
+        var code = Blockly.JavaScript.workspaceToCode(blocklyApp.workspace);
+        try {eval(code);} catch (e) {
+          alert(e);
+        }
+      },
+      id: 'runBtn'
+    }]
+  };
     document.addEventListener('DOMContentLoaded', function() {
       ng.platform.browser.bootstrap(blocklyApp.AppComponent);
     });
+    function move_forward(){
+      alert("hola");
+    }
   </script>
 
   <xml id="blockly-toolbox-xml" style="display: none">
@@ -97,6 +113,9 @@
       <block type="logic_negate"></block>
       <block type="logic_boolean"></block>
       <block type="logic_ternary"></block>
+    </category>
+    <category name="move" colour="210">
+      <block type="move_forward"></block>
     </category>
     <category name="Loops" colour="120">
       <block type="controls_repeat_ext">
