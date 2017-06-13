@@ -76,4 +76,5 @@ blocklyApp.AppComponent = ng.core.Component({
   getAriaLiveReadout: function() {
     return this.notificationsService.getDisplayedMessage();
   }
+
 });

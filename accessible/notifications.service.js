@@ -43,13 +43,14 @@ blocklyApp.NotificationsService = ng.core.Class({
 
     // Clear the current message, so that if, e.g., two operations of the same
     // type are performed, both messages will be read in succession.
-    this.setDisplayedMessage_('');
-
+    //this.setDisplayedMessage_('');
+    console.log(newMessage);
     // We need a non-zero timeout here, otherwise NVDA does not read the
     // notification messages properly.
     var that = this;
     this.timeouts.push(setTimeout(function() {
       that.setDisplayedMessage_(newMessage);
+      console.log(that.currentMessage);
     }, 20));
     this.timeouts.push(setTimeout(function() {
       that.setDisplayedMessage_('');

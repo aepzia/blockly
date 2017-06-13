@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Accessible Blockly Demo</title>
+  <title>Accessible Blockly</title>
 
   <!-- Load Blockly -->
   <script src="../../blockly_compressed.js"></script>
@@ -55,14 +55,13 @@
     *:focus {
       background: yellow;
     }
+
   </style>
 </head>
 <body>
   <h1>
-    <a href="https://developers.google.com/blockly/">Blockly</a> &gt;
-    <a href="../index.html">Demos</a> &gt; Accessible Blockly
+    Accessible Maze
   </h1>
-
   <p>
     This is a demo of a version of Blockly designed for screen readers,
     optimized for NVDA on Firefox. It allows users to create programs in a
@@ -75,6 +74,36 @@
     </ul>
   </p>
 
+  <table id="minijokoaTable" accesskey="1" summary="Taula hau honetan...">
+    <caption>Minijokoa</caption>
+    <tr>
+      <td abbr="Pareta">X</td>
+      <td abbr="Maribloki">MB</td>
+      <td abbr="Bidea">B</td>
+      <td abbr="Bidea">B</td>
+      <td abbr="Helmuga">H</td>
+      <td abbr="Pareta">X</td>
+    </tr>
+    <tr headers="Hurrengo lerroa">
+      <td abbr="Pareta">X</td>
+      <td abbr="Pareta">X</td>
+      <td abbr="Pareta">X</td>
+      <td abbr="Pareta">X</td>
+      <td abbr="Pareta">X</td>
+      <td abbr="Pareta">X</td>
+    </tr>
+    <tr>
+      <td abbr="Pareta">X</td>
+      <td abbr="Pareta">X</td>
+      <td abbr="Pareta">X</td>
+      <td abbr="Pareta">X</td>
+      <td abbr="Pareta">X</td>
+      <td abbr="Pareta">X</td>
+    </tr>
+  </table>
+  <div id = "emaitza" class="blocklyAriaLiveStatus">
+    <span aria-live="polite" role="status"></span>
+  </div>
   <!--
   <p>&rarr; More info on <a href="https://developers.google.com/blockly/">accessible Blockly</a>&hellip;</p>
   -->
@@ -90,7 +119,12 @@
       text: 'Run your program',
       action: function(){
         var code = Blockly.JavaScript.workspaceToCode(blocklyApp.workspace);
-        try {eval(code);} catch (e) {
+        try {
+          time=0;
+          j=1;
+          g=1;
+          i=0;
+          eval(code);} catch (e) {
           alert(e);
         }
       },
@@ -100,8 +134,40 @@
     document.addEventListener('DOMContentLoaded', function() {
       ng.platform.browser.bootstrap(blocklyApp.AppComponent);
     });
+    function move_forward2(){
+      setTimeout(function(){
+        document.getElementById("emaitza").innerHTML = "";
+      }, time);
+      switch (g) {
+        case 1:
+          var element=document.getElementById("minijokoaTable").rows[i].cells[j+1].innerHTML;
+          if(element=="B"){
+            //Bidea dagoela esan nahi du.
+            document.getElementById("minijokoaTable").rows[i].cells[j].innerHTML="B";
+            j++;
+            document.getElementById("minijokoaTable").rows[i].cells[j].innerHTML="MB";
+            document.getElementById("emaitza").innerHTML = "Lauki bat mugitu da aurrerantz";
+          }else if(element=="H"){
+            //Helmugara iritsi da.
+            //TODO: Bukatu
+          }else //TODO: ERROREA
+          break;
+        case 2:
+          break;
+        case 3:
+          break;
+        case 4:
+          break;
+        default:
+
+      }
+      document.getElementById("emaitza").setAttribute("role", "alert");
+    }
     function move_forward(){
-      alert("hola");
+      setTimeout(function(){
+        move_forward2();
+      }, time);
+      time=time+3000;
     }
   </script>
 

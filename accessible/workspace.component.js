@@ -69,6 +69,7 @@ blocklyApp.WorkspaceComponent = ng.core.Component({
       this.treeService = treeService;
 
       this.workspace = blocklyApp.workspace;
+
       this.ID_FOR_EMPTY_WORKSPACE_BTN = blocklyApp.ID_FOR_EMPTY_WORKSPACE_BTN;
     }
   ],
