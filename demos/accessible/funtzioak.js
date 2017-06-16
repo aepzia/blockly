@@ -90,3 +90,13 @@ function bidea_aurrean(){
 function helmugara_iritsi(){
   return document.getElementById("minijokoaTable").rows[i].cells[j].innerHTML=="H";
 }
+function biratu_ezkerreta(){
+  if(g==4){
+    g=1;
+  }else g++;
+}
+function biratu_eskubira(){
+  if(g==1){
+    g=4;
+  }else g--;
+}
