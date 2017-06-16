@@ -70,3 +70,21 @@ function bidea_ezkerrean(){
 
   }
 }
+function bidea_aurrean(){
+  switch (g) {
+    case 1:
+      return document.getElementById("minijokoaTable").rows[i].cells[j+1].innerHTML=="B";
+      break;
+    case 2:
+      return document.getElementById("minijokoaTable").rows[i-1].cells[j].innerHTML=="B";
+      break;
+    case 3:
+      return document.getElementById("minijokoaTable").rows[i].cells[j-1].innerHTML=="B";
+      break;
+    case 4:
+      return document.getElementById("minijokoaTable").rows[i+1].cells[j].innerHTML=="B";
+      break;
+    default:
+
+  }
+}
