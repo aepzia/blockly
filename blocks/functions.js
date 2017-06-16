@@ -10,3 +10,18 @@ Blockly.Blocks['move_forward'] = {
     this.setHelpUrl('');
   }
 };
+Blockly.Blocks['baldin_bidea'] = {
+  init: function() {
+    this.appendDummyInput()
+        .appendField("baldin")
+        .appendField(new Blockly.FieldDropdown([["bidea dago aurrean","F"], ["bidea dago eskubian","R"], ["bidea dago ezkerrean","L"]]), "aukerak");
+    this.appendStatementInput("NAME")
+        .setCheck(null)
+        .appendField("orduan");
+    this.setPreviousStatement(true, null);
+    this.setNextStatement(true, null);
+    this.setColour(230);
+    this.setTooltip('');
+    this.setHelpUrl('');
+  }
+};
