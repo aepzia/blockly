@@ -22,6 +22,24 @@ Blockly.JavaScript['errepikatu_helmuga_arte'] = function(block) {
   var text_helmuga = block.getFieldValue('helmuga');
   var statements_name = Blockly.JavaScript.statementToCode(block, 'NAME');
   // TODO: Assemble JavaScript into code variable.
-  var code = '...;\n';
+  var code = 'while (!helmugara_iritsi()){\n' + statements_name+'\n};';
+  return code;
+};
+Blockly.JavaScript['biratu_eskubira'] = function(block) {
+  var dropdown_biratu = block.getFieldValue('biratu');
+  if(dropdown_biratu=="L"){
+    code = "biratu_ezkerreta();"
+  }else if(dropdown_biratu=="R"){
+    code = "biratu_eskubira();"
+  }
+  return code;
+};
+Blockly.JavaScript['biratu_ezkerreta'] = function(block) {
+  var dropdown_biratu = block.getFieldValue('biratu');
+  if(dropdown_biratu=="L"){
+    code = "biratu_ezkerreta();"
+  }else if(dropdown_biratu=="R"){
+    code = "biratu_eskubira();"
+  }
   return code;
 };

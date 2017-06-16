@@ -40,3 +40,27 @@ Blockly.Blocks['errepikatu_helmuga_arte'] = {
     this.setHelpUrl('');
   }
 };
+Blockly.Blocks['biratu_eskubira'] = {
+  init: function() {
+    this.appendDummyInput()
+        .appendField("biratu")
+        .appendField(new Blockly.FieldDropdown([["eskubira","R"], ["ezkerrera","L"]]), "biratu");
+    this.setPreviousStatement(true, null);
+    this.setNextStatement(true, null);
+    this.setColour(120);
+    this.setTooltip('');
+    this.setHelpUrl('');
+  }
+};
+Blockly.Blocks['biratu_ezkerreta'] = {
+  init: function() {
+    this.appendDummyInput()
+        .appendField("biratu")
+        .appendField(new Blockly.FieldDropdown([["ezkerrera","L"], ["eskubira","R"]]), "biratu");
+    this.setPreviousStatement(true, null);
+    this.setNextStatement(true, null);
+    this.setColour(120);
+    this.setTooltip('');
+    this.setHelpUrl('');
+  }
+};
