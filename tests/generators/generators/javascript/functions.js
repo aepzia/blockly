@@ -18,3 +18,10 @@ Blockly.JavaScript['baldin_bidea'] = function(block) {
   }
   return code;
 }
+Blockly.JavaScript['errepikatu_helmuga_arte'] = function(block) {
+  var text_helmuga = block.getFieldValue('helmuga');
+  var statements_name = Blockly.JavaScript.statementToCode(block, 'NAME');
+  // TODO: Assemble JavaScript into code variable.
+  var code = '...;\n';
+  return code;
+};

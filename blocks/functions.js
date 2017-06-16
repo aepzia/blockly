@@ -25,3 +25,18 @@ Blockly.Blocks['baldin_bidea'] = {
     this.setHelpUrl('');
   }
 };
+Blockly.Blocks['errepikatu_helmuga_arte'] = {
+  init: function() {
+    this.appendDummyInput()
+        .appendField("errepikatu")
+        .appendField(new Blockly.FieldTextInput("helmugara ititsi arte"), "helmuga");
+    this.appendStatementInput("NAME")
+        .setCheck(null)
+        .appendField("egin");
+    this.setPreviousStatement(true, null);
+    this.setNextStatement(true, null);
+    this.setColour(120);
+    this.setTooltip('');
+    this.setHelpUrl('');
+  }
+};

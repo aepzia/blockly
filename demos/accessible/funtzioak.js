@@ -85,6 +85,8 @@ function bidea_aurrean(){
       return document.getElementById("minijokoaTable").rows[i+1].cells[j].innerHTML=="B";
       break;
     default:
-
   }
+}
+function helmugara_iritsi(){
+  return document.getElementById("minijokoaTable").rows[i].cells[j].innerHTML=="H";
 }
