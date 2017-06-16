@@ -100,3 +100,35 @@ function biratu_eskubira(){
     g=4;
   }else g--;
 }
+
+function kargatu_minijokoa(){
+	var xmlDoc=loadXMLDoc();
+	var arniveles = xmlDoc.getElementsByTagName("maila");
+  var momentuko_minijokoa = arniveles[0];
+
+	//for (i=0;i<ar.length;i++) {
+		var minijokoaTable = momentuko_minijokoa.getElementsByTagName("table");
+    document.getElementById("minijokoaTable").innerHTML = minijokoaTable[0].innerHTML;
+
+    var minijokoToolbox = momentuko_minijokoa.getElementsByTagName("toolbox");
+    document.getElementById("blockly-toolbox-xml").innerHTML=minijokoToolbox[0].innerHTML;
+
+    var hEgoera = momentuko_minijokoa.getElementsByTagName("hasierakoEgoera");
+    i = hEgoera[0].getElementsByTagName('i');
+    j = hEgoera[0].getElementsByTagName('j');
+ //	}
+}
+function loadXMLDoc(){
+  if (window.XMLHttpRequest)
+
+  {
+  	xmlhttp=new XMLHttpRequest();
+
+  }else{
+  	xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+
+  xmlhttp.open("GET","minijokoak.xml",false);
+  xmlhttp.send();
+  return xmlhttp.responseXML;
+}

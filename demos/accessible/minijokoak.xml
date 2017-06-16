@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<minijokoak>
+<maila>
+  <table summary="Taula hau honetan...">
+    <caption>Minijokoa</caption>
+    <tr>
+      <td abbr="Pareta">X</td>
+      <td abbr="Maribloki">MB</td>
+      <td abbr="Bidea">B</td>
+      <td abbr="Bidea">B</td>
+      <td abbr="Helmuga">H</td>
+      <td abbr="Pareta">X</td>
+    </tr>
+    <tr headers="Hurrengo lerroa">
+      <td abbr="Pareta">X</td>
+      <td abbr="Pareta">X</td>
+      <td abbr="Pareta">X</td>
+      <td abbr="Pareta">X</td>
+      <td abbr="Pareta">X</td>
+      <td abbr="Pareta">X</td>
+    </tr>
+    <tr>
+      <td abbr="Pareta">X</td>
+      <td abbr="Pareta">X</td>
+      <td abbr="Pareta">X</td>
+      <td abbr="Pareta">X</td>
+      <td abbr="Pareta">X</td>
+      <td abbr="Pareta">X</td>
+    </tr>
+  </table>
+  <hasierakoEgoera>
+    <i value="1"></i>
+    <j value="1"></j>
+  </hasierakoEgoera>
+  <toolbox>
+    <category name="move" colour="210">
+      <block type="move_forward"></block>
+      <block type="baldin_bidea"></block>
+      <block type="errepikatu_helmuga_arte"></block>
+    </category>
+  </toolbox>
+</maila>
+</minijokoak>
