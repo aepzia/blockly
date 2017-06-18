@@ -4,12 +4,12 @@
   <table summary="Taula hau honetan...">
     <caption>Minijokoa</caption>
     <tr>
-      <td abbr="Pareta">X</td>
-      <td abbr="Maribloki">MB</td>
-      <td abbr="Bidea">B</td>
-      <td abbr="Bidea">B</td>
-      <td abbr="Helmuga">H</td>
-      <td abbr="Pareta">X</td>
+      <td abbr="Pareta">A</td>
+      <td abbr="Maribloki">B</td>
+      <td abbr="Bidea">C</td>
+      <td abbr="Bidea">D</td>
+      <td abbr="Helmuga">E</td>
+      <td abbr="Pareta">F</td>
     </tr>
     <tr headers="Hurrengo lerroa">
       <td abbr="Pareta">X</td>

@@ -106,13 +106,24 @@ function kargatu_minijokoa(){
 	var arniveles = xmlDoc.getElementsByTagName("maila");
   var momentuko_minijokoa = arniveles[0];
 
-	//for (i=0;i<ar.length;i++) {
-		var minijokoaTable = momentuko_minijokoa.getElementsByTagName("table");
-    document.getElementById("minijokoaTable").innerHTML = minijokoaTable[0].innerHTML;
+		var minijokoaTaula = momentuko_minijokoa.getElementsByTagName("table");
+    tr = minijokoaTaula[0].getElementsByTagName('tr');
+    var table = document.getElementById("minijokoaTable");
+    for (e=0;e<tr.length;e++){
+      row = table.insertRow(e);
+      td = tr[e].getElementsByTagName('td');
+      for(p=0;p<td.length;p++){
+        cell = row.insertCell(p);
+        cell.innerHTML = td[p].innerHTML;
+      }
+    }
+
+
 
     var minijokoToolbox = momentuko_minijokoa.getElementsByTagName("toolbox");
-    document.getElementById("blockly-toolbox-xml").innerHTML=minijokoToolbox[0].innerHTML;
-
+    for(i=0; i<minijokoToolbox.length; i++){
+      document.getElementById("blockly-toolbox-xml").appendChild(minijokoToolbox[i]);
+    }
     var hEgoera = momentuko_minijokoa.getElementsByTagName("hasierakoEgoera");
     i = hEgoera[0].getElementsByTagName('i');
     j = hEgoera[0].getElementsByTagName('j');
