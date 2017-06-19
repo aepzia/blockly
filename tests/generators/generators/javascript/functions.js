@@ -21,8 +21,8 @@ Blockly.JavaScript['baldin_bidea'] = function(block) {
 Blockly.JavaScript['errepikatu_helmuga_arte'] = function(block) {
   var text_helmuga = block.getFieldValue('helmuga');
   var statements_name = Blockly.JavaScript.statementToCode(block, 'NAME');
-  // TODO: Assemble JavaScript into code variable.
-  var code = 'while (!helmugara_iritsi()){\n' + statements_name+'\n};';
+  // TODO: Assemble JavaScript into code variable.v
+  var code = "function errekurtsibo(){setTimeout(\nfunction(){\nif(!helmugara_iritsi()){errekurtsibo();\n"+statements_name+"\n\n}\n},400);}\nerrekurtsibo();\n";
   return code;
 };
 Blockly.JavaScript['biratu_eskubira'] = function(block) {

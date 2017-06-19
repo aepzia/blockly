@@ -75,18 +75,16 @@
       <li>To delete or add links to existing blocks, press Enter while you're on that block.</li>
     </ul>
   </p>
-
-  <table id="minijokoaTable" accesskey="1"></table>
-
   <div id = "emaitza" class="blocklyAriaLiveStatus">
     <span aria-live="polite" role="status"></span>
   </div>
   <!--
   <p>&rarr; More info on <a href="https://developers.google.com/blockly/">accessible Blockly</a>&hellip;</p>
   -->
+   <a href="#minijokoaTable" accesskey="m">Minijokoa taula</a><br>
+   <table id="minijokoaTable"></table>
 
   <blockly-app></blockly-app>
-
   <script>
   var ACCESSIBLE_GLOBALS = {
     // Prefix of path to sound files.
@@ -98,10 +96,10 @@
         var code = Blockly.JavaScript.workspaceToCode(blocklyApp.workspace);
         try {
           time=0;
-          j=1;
           g=1;
-          i=0;
-          alert(code);} catch (e) {
+          eval(code);
+          hurrengo_maila();
+        } catch (e) {
           alert(e);
         }
       },
@@ -110,11 +108,11 @@
   };
     document.addEventListener('DOMContentLoaded', function() {
       ng.platform.browser.bootstrap(blocklyApp.AppComponent);
-      kargatu_minijokoa();
+      maila=0;
+      kargatu_minijokoa(maila);
     });
 
   </script>
-
   <xml id="blockly-toolbox-xml" style="display: none">
 
   </xml>

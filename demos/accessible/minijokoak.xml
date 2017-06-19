@@ -1,42 +1,294 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <minijokoak>
+<maila id="1">
+  <table summary="Taula hau honetan...">
+    <caption>Minijokoa</caption>
+    <tr>
+      <td>1</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>X</td>
+      <td>MB</td>
+      <td>B</td>
+      <td>H</td>
+      <td>X</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+    </tr>
+  </table>
+  <hasierakoEgoera>
+    <i>1</i>
+    <j>1</j>
+  </hasierakoEgoera>
+  <bukaerakoEgoera>
+    <i>1</i>
+    <j>3</j>
+  </bukaerakoEgoera>
+  <toolbox>
+    <category name="move" colour="210">
+      <block type="move_forward"></block>
+      <block type="biratu_ezkerreta"></block>
+      <block type="biratu_eskubira"></block>
+      <block type="errepikatu_helmuga_arte"></block>
+
+    </category>
+  </toolbox>
+</maila>
+
+<maila id="2">
+  <table summary="Taula hau honetan...">
+    <caption>Minijokoa</caption>
+    <tr>
+      <td>2</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>X</td>
+      <td>X</td>
+      <td>B</td>
+      <td>H</td>
+      <td>X</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>X</td>
+      <td>MB</td>
+      <td>B</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+    </tr>
+  </table>
+  <hasierakoEgoera>
+    <i>2</i>
+    <j>1</j>
+  </hasierakoEgoera>
+  <bukaerakoEgoera>
+    <i>1</i>
+    <j>3</j>
+  </bukaerakoEgoera>
+  <toolbox>
+    <category name="move" colour="210">
+      <block type="move_forward"></block>
+      <block type="biratu_ezkerreta"></block>
+      <block type="biratu_eskubira"></block>
+      <block type="errepikatu_helmuga_arte"></block>
+
+    </category>
+  </toolbox>
+</maila>
+<maila id="3">
+  <table summary="Taula hau honetan...">
+    <caption>Minijokoa</caption>
+    <tr>
+      <td>3</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>X</td>
+      <td>MB</td>
+      <td>B</td>
+      <td>B</td>
+      <td>B</td>
+      <td>B</td>
+      <td>B</td>
+      <td>B</td>
+      <td>H</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+    </tr>
+  </table>
+  <hasierakoEgoera>
+    <i>1</i>
+    <j>1</j>
+  </hasierakoEgoera>
+  <bukaerakoEgoera>
+    <i>1</i>
+    <j>8</j>
+  </bukaerakoEgoera>
+  <toolbox>
+    <category name="move" colour="210">
+      <block type="move_forward"></block>
+      <block type="biratu_ezkerreta"></block>
+      <block type="biratu_eskubira"></block>
+      <block type="errepikatu_helmuga_arte"></block>
+    </category>
+  </toolbox>
+</maila>
 <maila>
   <table summary="Taula hau honetan...">
     <caption>Minijokoa</caption>
     <tr>
-      <td abbr="Pareta">A</td>
-      <td abbr="Maribloki">B</td>
-      <td abbr="Bidea">C</td>
-      <td abbr="Bidea">D</td>
-      <td abbr="Helmuga">E</td>
-      <td abbr="Pareta">F</td>
-    </tr>
-    <tr headers="Hurrengo lerroa">
-      <td abbr="Pareta">X</td>
-      <td abbr="Pareta">X</td>
-      <td abbr="Pareta">X</td>
-      <td abbr="Pareta">X</td>
-      <td abbr="Pareta">X</td>
-      <td abbr="Pareta">X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
     </tr>
     <tr>
-      <td abbr="Pareta">X</td>
-      <td abbr="Pareta">X</td>
-      <td abbr="Pareta">X</td>
-      <td abbr="Pareta">X</td>
-      <td abbr="Pareta">X</td>
-      <td abbr="Pareta">X</td>
+      <td>X</td>
+      <td>MB</td>
+      <td>B</td>
+      <td>H</td>
+      <td>X</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
     </tr>
   </table>
   <hasierakoEgoera>
-    <i value="1"></i>
-    <j value="1"></j>
+    <i>1</i>
+    <j>1</j>
   </hasierakoEgoera>
+  <bukaerakoEgoera>
+    <i>1</i>
+    <j>3</j>
+  </bukaerakoEgoera>
   <toolbox>
     <category name="move" colour="210">
       <block type="move_forward"></block>
-      <block type="baldin_bidea"></block>
-      <block type="errepikatu_helmuga_arte"></block>
+      <block type="biratu_ezkerreta"></block>
+      <block type="biratu_eskubira"></block>
+    </category>
+  </toolbox>
+</maila>
+<maila>
+  <table summary="Taula hau honetan...">
+    <caption>Minijokoa</caption>
+    <tr>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>X</td>
+      <td>MB</td>
+      <td>B</td>
+      <td>H</td>
+      <td>X</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+    </tr>
+  </table>
+  <hasierakoEgoera>
+    <i>1</i>
+    <j>1</j>
+  </hasierakoEgoera>
+  <bukaerakoEgoera>
+    <i>1</i>
+    <j>3</j>
+  </bukaerakoEgoera>
+  <toolbox>
+    <category name="move" colour="210">
+      <block type="move_forward"></block>
+      <block type="biratu_ezkerreta"></block>
+      <block type="biratu_eskubira"></block>
+    </category>
+  </toolbox>
+</maila>
+<maila>
+  <table summary="Taula hau honetan...">
+    <caption>Minijokoa</caption>
+    <tr>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>X</td>
+      <td>MB</td>
+      <td>B</td>
+      <td>H</td>
+      <td>X</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+    </tr>
+  </table>
+  <hasierakoEgoera>
+    <i>1</i>
+    <j>1</j>
+  </hasierakoEgoera>
+  <bukaerakoEgoera>
+    <i>1</i>
+    <j>3</j>
+  </bukaerakoEgoera>
+  <toolbox>
+    <category name="move" colour="210">
+      <block type="move_forward"></block>
+      <block type="biratu_ezkerreta"></block>
+      <block type="biratu_eskubira"></block>
     </category>
   </toolbox>
 </maila>
