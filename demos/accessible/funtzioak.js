@@ -13,7 +13,7 @@ function move_forward2(){
           document.getElementById("minijokoaTable").rows[i].cells[j].innerHTML="B";
         }
         j++;
-        document.getElementById("minijokoaTable").rows[i].cells[j].innerHTML="MB";
+        document.getElementById("minijokoaTable").rows[i].cells[j].innerHTML="R";
         document.getElementById("emaitza").innerHTML = "Lauki bat mugitu da aurrerantz";
       }else //TODO: ERROREA
       break;
@@ -27,7 +27,7 @@ function move_forward2(){
           document.getElementById("minijokoaTable").rows[i].cells[j].innerHTML="B";
         }
         i--;
-        document.getElementById("minijokoaTable").rows[i].cells[j].innerHTML="MB";
+        document.getElementById("minijokoaTable").rows[i].cells[j].innerHTML="U";
         document.getElementById("emaitza").innerHTML = "Lauki bat mugitu da aurrerantz";
       }else //TODO: ERROREA
       break;
@@ -41,7 +41,7 @@ function move_forward2(){
         document.getElementById("minijokoaTable").rows[i].cells[j].innerHTML="B";
       }
       j--;
-      document.getElementById("minijokoaTable").rows[i].cells[j].innerHTML="MB";
+      document.getElementById("minijokoaTable").rows[i].cells[j].innerHTML="L";
       document.getElementById("emaitza").innerHTML = "Lauki bat mugitu da aurrerantz";
     }else //TODO: ERROREA
       break;
@@ -55,7 +55,7 @@ function move_forward2(){
           document.getElementById("minijokoaTable").rows[i].cells[j].innerHTML="B";
         }
         i;
-        document.getElementById("minijokoaTable").rows[i].cells[j].innerHTML="MB";
+        document.getElementById("minijokoaTable").rows[i].cells[j].innerHTML="D";
         document.getElementById("emaitza").innerHTML = "Lauki bat mugitu da aurrerantz";
       }else //TODO erroreaa;
         break;
@@ -149,23 +149,63 @@ function hurrengo_maila(){
 }
 function biratu_ezkerreta(){
   setTimeout(function(){
-    if(g==4){
-    g=1;
-    }else g++;
+    switch (g) {
+      case 1:
+        g++;
+        document.getElementById("minijokoaTable").rows[i].cells[j].innerHTML="U";
+        break;
+      case 2:
+        g++;
+        document.getElementById("minijokoaTable").rows[i].cells[j].innerHTML="L";
+
+        break;
+      case 3:
+        g++;
+        document.getElementById("minijokoaTable").rows[i].cells[j].innerHTML="D";
+
+        break;
+      case 4:
+        g=1;
+        document.getElementById("minijokoaTable").rows[i].cells[j].innerHTML="R";
+
+        break;
+      default:
+
+    }
   },time);
 }
 function biratu_eskubira(){
   setTimeout(function(){
-    if(g==1){
-    g=4;
-    }else g--;
+    switch (g) {
+      case 1:
+        g=4;
+        document.getElementById("minijokoaTable").rows[i].cells[j].innerHTML="D";
+        break;
+      case 2:
+        g--;
+        document.getElementById("minijokoaTable").rows[i].cells[j].innerHTML="R";
+
+        break;
+      case 3:
+        g--;
+        document.getElementById("minijokoaTable").rows[i].cells[j].innerHTML="U";
+
+        break;
+      case 4:
+        g--;
+        document.getElementById("minijokoaTable").rows[i].cells[j].innerHTML="L";
+
+        break;
+      default:
+
+    }
   },time);
 }
 
 function kargatu_minijokoa(m){
 	var xmlDoc=loadXMLDoc();
 	var arniveles = xmlDoc.getElementsByTagName("maila");
-  var momentuko_minijokoa = arniveles[m];
+  var momentuko_minijokoa = arniveles[4];
 
 		var minijokoaTaula = momentuko_minijokoa.getElementsByTagName("table");
     tr = minijokoaTaula[0].getElementsByTagName('tr');
