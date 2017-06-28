@@ -448,16 +448,118 @@
       <td>X</td>
       <td>X</td>
       <td>X</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>X</td>
+      <td>B</td>
+      <td>B</td>
+      <td>B</td>
+      <td>B</td>
+      <td>B</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>X</td>
+      <td>B</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>B</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>X</td>
+      <td>B</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>B</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>X</td>
+      <td>B</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>B</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>X</td>
+      <td>B</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>B</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>X</td>
+      <td>B</td>
+      <td>B</td>
+      <td>H</td>
+      <td>X</td>
+      <td>B</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>B</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>B</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>B</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>B</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>B</td>
+      <td>X</td>
     </tr>
     <tr>
       <td>X</td>
       <td>R</td>
       <td>B</td>
-      <td>H</td>
-      <td>X</td>
+      <td>B</td>
+      <td>B</td>
+      <td>B</td>
       <td>X</td>
     </tr>
     <tr>
+      <td>X</td>
       <td>X</td>
       <td>X</td>
       <td>X</td>
@@ -467,11 +569,11 @@
     </tr>
   </table>
   <hasierakoEgoera>
-    <i>1</i>
+    <i>12</i>
     <j>1</j>
   </hasierakoEgoera>
   <bukaerakoEgoera>
-    <i>1</i>
+    <i>6</i>
     <j>3</j>
   </bukaerakoEgoera>
   <toolbox>
@@ -479,6 +581,7 @@
       <block type="move_forward"></block>
       <block type="biratu_ezkerreta"></block>
       <block type="biratu_eskubira"></block>
+      <block type="baldin_bidea"></block>
     </category>
   </toolbox>
 </maila>
@@ -492,16 +595,132 @@
       <td>X</td>
       <td>X</td>
       <td>X</td>
+      <td>X</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>B</td>
+      <td>B</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>B</td>
+      <td>X</td>
+      <td>X</td>
     </tr>
     <tr>
       <td>X</td>
       <td>R</td>
       <td>B</td>
-      <td>H</td>
+      <td>B</td>
+      <td>B</td>
+      <td>B</td>
       <td>X</td>
       <td>X</td>
     </tr>
     <tr>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>B</td>
+      <td>X</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>B</td>
+      <td>X</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>B</td>
+      <td>B</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>B</td>
+      <td>X</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>B</td>
+      <td>X</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>B</td>
+      <td>X</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>X</td>
+      <td>B</td>
+      <td>B</td>
+      <td>H</td>
+      <td>X</td>
+      <td>B</td>
+      <td>X</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>X</td>
+      <td>B</td>
+      <td>X</td>
+      <td>B</td>
+      <td>X</td>
+      <td>B</td>
+      <td>X</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>X</td>
+      <td>B</td>
+      <td>B</td>
+      <td>B</td>
+      <td>B</td>
+      <td>B</td>
+      <td>B</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>X</td>
+      <td>X</td>
       <td>X</td>
       <td>X</td>
       <td>X</td>
@@ -511,11 +730,11 @@
     </tr>
   </table>
   <hasierakoEgoera>
-    <i>1</i>
+    <i>3</i>
     <j>1</j>
   </hasierakoEgoera>
   <bukaerakoEgoera>
-    <i>1</i>
+    <i>10</i>
     <j>3</j>
   </bukaerakoEgoera>
   <toolbox>
