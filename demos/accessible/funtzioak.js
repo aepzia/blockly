@@ -137,12 +137,13 @@ function hurrengo_maila(){
     if(time==time1){
       if(helmugara_iritsi()){
         alert("Zorionak! Maila gainditu duzu");
+        maila = localStorage.getItem("maila");
         maila++;
-        kargatu_minijokoa(maila);
-
+        localStorage.setItem("maila", maila);;
+        location.reload();
       }else{
         alert("Lastima ez duzu lortu, saiatu zaitez berriz");
-        kargatu_minijokoa(maila);
+        kargatu_minijokoa(localStorage.getItem("maila"));
       }
     } else hurrengo_maila();
   },8000);
@@ -205,7 +206,7 @@ function biratu_eskubira(){
 function kargatu_minijokoa(m){
 	var xmlDoc=loadXMLDoc();
 	var arniveles = xmlDoc.getElementsByTagName("maila");
-  var momentuko_minijokoa = arniveles[4];
+  var momentuko_minijokoa = arniveles[m];
 
 		var minijokoaTaula = momentuko_minijokoa.getElementsByTagName("table");
     tr = minijokoaTaula[0].getElementsByTagName('tr');

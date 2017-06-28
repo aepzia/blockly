@@ -108,8 +108,10 @@
   };
     document.addEventListener('DOMContentLoaded', function() {
       ng.platform.browser.bootstrap(blocklyApp.AppComponent);
-      maila=0;
-      kargatu_minijokoa(maila);
+      if(localStorage.getItem("maila")==null){
+        localStorage.setItem("maila", 0);
+      }
+      kargatu_minijokoa(localStorage.getItem("maila"));
     });
 
   </script>
