@@ -25,6 +25,24 @@ Blockly.Blocks['baldin_bidea'] = {
     this.setHelpUrl('');
   }
 };
+
+Blockly.Blocks['baldin_bidea_bestela'] = {
+  init: function() {
+    this.appendDummyInput()
+        .appendField("Baldin bidea")
+        .appendField(new Blockly.FieldDropdown([["ezkerrean","L"], ["eskubian","R"], ["aurrean","F"]]), "NAME");
+    this.appendStatementInput("egin")
+        .setCheck(null)
+        .appendField("egin");
+    this.appendStatementInput("bestela")
+        .setCheck(null)
+        .appendField("bestela");
+    this.setColour(230);
+    this.setTooltip('');
+    this.setHelpUrl('');
+  }
+};
+
 Blockly.Blocks['errepikatu_helmuga_arte'] = {
   init: function() {
     this.appendDummyInput()

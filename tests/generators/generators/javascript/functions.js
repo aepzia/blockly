@@ -18,6 +18,24 @@ Blockly.JavaScript['baldin_bidea'] = function(block) {
   }
   return code;
 }
+Blockly.JavaScript['baldin_bidea_bestela'] = function(block) {
+  var dropdown_name = block.getFieldValue('NAME');
+  var statements_egin = Blockly.JavaScript.statementToCode(block, 'egin');
+  var statements_bestela = Blockly.JavaScript.statementToCode(block, 'bestela');
+  // TODO: Assemble JavaScript into code variable.
+  if(dropdown_aukerak=="F"){
+    //bidea aurrean
+    code="if (bidea_aurrean()){\n"+statements_egin+"\n}else{\n"+statements_bestela+"\n}";
+  }else if(dropdown_aukerak=="R"){
+    //bidea eskubian
+    code="if (bidea_eskubian()){\n"+statements_egin+"\n}else{\n"+statements_bestela+"\n}";
+  }else if(dropdown_aukerak=="L"){
+    //Bidea ezkerrean
+    code="if (bidea_ezkerrean()){\n"+statements_egin+"\n}else{\n"+statements_bestela+"\n}";
+  }
+  return code;
+};
+
 Blockly.JavaScript['errepikatu_helmuga_arte'] = function(block) {
   var text_helmuga = block.getFieldValue('helmuga');
   var statements_name = Blockly.JavaScript.statementToCode(block, 'NAME');

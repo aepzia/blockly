@@ -206,7 +206,7 @@ function biratu_eskubira(){
 function kargatu_minijokoa(m){
 	var xmlDoc=loadXMLDoc();
 	var arniveles = xmlDoc.getElementsByTagName("maila");
-  var momentuko_minijokoa = arniveles[m];
+  var momentuko_minijokoa = arniveles[8];
 
 		var minijokoaTaula = momentuko_minijokoa.getElementsByTagName("table");
     tr = minijokoaTaula[0].getElementsByTagName('tr');
